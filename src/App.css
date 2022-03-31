@@ -16,12 +16,9 @@ html {
   background-color: hsl(218, 23%, 16%);
 }
 
-/* .test {
-  outline: 1px solid yellow;
-} */
-
 .container {
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-items: center;
@@ -51,4 +48,25 @@ html {
 .advice-giver__advice-box p {
   color: var(--neon-green);
   text-transform: uppercase;
+}
+
+.pattern-border {
+  width: 100%;
+  z-index: 0;
+}
+
+.dice {
+  background-color: var(--neon-green);
+  padding: 15px;
+  border-radius: 60%;
+  transform: translateY(-30px);
+}
+
+.dice:hover {
+  box-shadow: 2px 2px 20px rgba(51, 255, 153, 1);
+}
+
+.dice img {
+  display: block;
+  margin: auto;
 }

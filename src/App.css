@@ -64,6 +64,7 @@ html {
 
 .dice:hover {
   box-shadow: 2px 2px 20px rgba(51, 255, 153, 1);
+  cursor: pointer;
 }
 
 .dice img {

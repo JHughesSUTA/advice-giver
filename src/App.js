@@ -13,18 +13,19 @@ function App() {
   }
 
   useEffect(() => {
-    const getAdvice = async () => {
-      const adviceFromServer = await fetchAdvice()
-      setAdvice(adviceFromServer.slip)
-    }
     getAdvice()
   }, [])
+
+  const getAdvice = async () => {
+    const adviceFromServer = await fetchAdvice();
+    setAdvice(adviceFromServer.slip);
+  };
 
   return (
     <div className="App">
       <div className="container test">
         <AdviceBox advice={advice} />
-        <Dice />
+        <Dice handleClick={getAdvice} />
       </div>
     </div>
   );
